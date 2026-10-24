@@ -312,66 +312,7 @@ linux_practice/
 
 ---
 
-### 4. Complete Practice Folder Cleanup & Verification
 
-**Commands Executed:**
-```bash
-# Navigate to parent directory (/tmp)
-cd ..
 
-# Recursively remove the entire practice folder
-rm -r linux_practice
 
-# Verify deletion (must return error confirming non-existence)
-ls linux_practice
-```
 
-**Verification Output:**
-```text
-[venkatesh@ip-172-31-4-86:/tmp]$ ls linux_practice
-ls: cannot access 'linux_practice': No such file or directory
-```
-
----
-
-## 📋 Command Reference Cheat Sheet
-
-| Command | Example | Purpose / Description |
-|---|---|---|
-| `pwd` | `pwd` | Print Name of Current Working Directory |
-| `ls` | `ls -la /` | List directory contents with permissions and hidden entries |
-| `cd` | `cd /var/log` | Change working directory using absolute path |
-| `cd ..` | `cd ..` | Move up to parent directory |
-| `cd ~` | `cd ~` | Change to current user's home directory |
-| `cd -` | `cd -` | Switch back to the previous working directory |
-| `cd .` | `cd .` | Reference current working directory |
-| `touch` | `touch file1.txt file2.txt` | Create empty files or update timestamps |
-| `mkdir` | `mkdir dir1 dir2` | Create one or more directories |
-| `mkdir -p` | `mkdir -p parent/child/gc` | Create nested parent and child directory trees |
-| `rm` | `rm file3.log` | Delete specified files |
-| `rmdir` | `rmdir dir2` | Remove empty directory |
-| `rm -r` | `rm -r parent/` | Recursively delete folder and all nested contents |
-
----
-
-## 📸 Screenshots & Deliverables Mapping Table
-
-| # | Task Requirement | Evidence Screenshot | Status |
-|---|---|---|---|
-| 1 | Root Directory Exploration (`pwd`, `ls /`, `ls -l /`) | [`01_root_exploration_and_etc_navigation.png`](screenshots/01_root_exploration_and_etc_navigation.png) | ✅ Attached |
-| 2 | Directory navigation into `/etc`, `/var`, `/home` with `pwd` | [`01_root_exploration_and_etc_navigation.png`](screenshots/01_root_exploration_and_etc_navigation.png), [`03_var_and_home_navigation.png`](screenshots/03_var_and_home_navigation.png) | ✅ Attached |
-| 3 | Listing Core System Directories (`/bin`, `/boot`, `/dev`, `/proc`, `/tmp`) | [`04_bin_directory_contents.png`](screenshots/04_bin_directory_contents.png), [`05_boot_dev_proc_tmp_contents.png`](screenshots/05_boot_dev_proc_tmp_contents.png) | ✅ Attached |
-| 4 | Absolute & Relative Navigation (`cd /var/log`, `cd log`, `cd ..`) | [`06_absolute_and_relative_path_navigation.png`](screenshots/06_absolute_and_relative_path_navigation.png) | ✅ Attached |
-| 5 | Navigation Shortcuts (`cd ~`, `cd -`, `cd ..`, `cd .`) | [`07_navigation_shortcuts_tilde_dash_dot.png`](screenshots/07_navigation_shortcuts_tilde_dash_dot.png) | ✅ Attached |
-| 6 | File & Directory Creation (`mkdir`, `touch`, `mkdir -p`) | [`08_file_and_directory_creation_and_removal.png`](screenshots/08_file_and_directory_creation_and_removal.png) | ✅ Attached |
-| 7 | File & Directory Removal (`rm file`, `rmdir dir2`, `rm -r parent`) | [`08_file_and_directory_creation_and_removal.png`](screenshots/08_file_and_directory_creation_and_removal.png) | ✅ Attached |
-| 8 | Complete Folder Deletion & Verification (`rm -r`, `ls`) | Documented with verification output | ✅ Attached |
-
----
-
-## 📝 Submission Guidelines Checklist
-
-- [x] **Terminal Environment:** Full terminal window on AWS EC2 Ubuntu instance with visible username `venkatesh@ip-172-31-4-86`.
-- [x] **All Screenshots Attached:** Embedded directly into [`README.md`](file:///Users/venkatesh/Devops/LinuxAssignements/FileSystemStructure/README.md) and inserted into [`FileSystemStructure_Assignment.docx`](file:///Users/venkatesh/Devops/LinuxAssignements/FileSystemStructure/FileSystemStructure_Assignment.docx).
-- [x] **Word Document Prepared:** Contains full name, assignment name, date, OS used, exact task statement, commands, explanations, and all screenshots.
-- [x] **Submission Archive Created:** [`FileSystemStructure_Submission.zip`](file:///Users/venkatesh/Devops/LinuxAssignements/FileSystemStructure/FileSystemStructure_Submission.zip) ready for Google Drive upload.
